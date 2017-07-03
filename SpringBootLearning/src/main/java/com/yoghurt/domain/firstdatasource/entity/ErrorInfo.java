@@ -1,4 +1,4 @@
-package com.yoghurt.entity;
+package com.yoghurt.domain.firstdatasource.entity;
 
 /**
  * Created by admin on 2017/6/23.

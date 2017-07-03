@@ -1,6 +1,6 @@
-package com.yoghurt.dao;
+package com.yoghurt.domain.firstdatasource.dao;
 
-import com.yoghurt.entity.User;
+import com.yoghurt.domain.firstdatasource.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

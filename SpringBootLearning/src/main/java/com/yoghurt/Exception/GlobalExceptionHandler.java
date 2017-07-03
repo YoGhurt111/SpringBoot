@@ -1,6 +1,6 @@
 package com.yoghurt.Exception;
 
-import com.yoghurt.entity.ErrorInfo;
+import com.yoghurt.domain.firstdatasource.entity.ErrorInfo;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;

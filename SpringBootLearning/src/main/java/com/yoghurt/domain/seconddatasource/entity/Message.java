@@ -1,4 +1,4 @@
-package com.yoghurt.entity;
+package com.yoghurt.domain.seconddatasource.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,13 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- * Created by admin on 2017/6/22.
+ * Created by admin on 2017/7/3.
  */
 @Entity
-public class User {
+public class Message {
     private long id;
     private String name;
-    private Integer age;
+    private String content;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -32,11 +32,11 @@ public class User {
         this.name = name;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getContent() {
+        return content;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setContent(String content) {
+        this.content = content;
     }
 }

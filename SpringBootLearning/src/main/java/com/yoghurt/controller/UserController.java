@@ -1,6 +1,6 @@
 package com.yoghurt.controller;
 
-import com.yoghurt.entity.User;
+import com.yoghurt.domain.firstdatasource.entity.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;

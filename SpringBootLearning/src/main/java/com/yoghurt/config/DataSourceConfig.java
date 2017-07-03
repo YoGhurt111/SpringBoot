@@ -18,14 +18,14 @@ public class DataSourceConfig {
     @Bean(name = "primaryDataSource")
     @Qualifier("primaryDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.primary")
-    public DataSource primaryDataSource(){
+    public DataSource PrimaryDataSource(){
         return DataSourceBuilder.create().build();
     }
 
     @Bean(name = "secondaryDataSource")
     @Qualifier("secondaryDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.secondary")
-    public DataSource secondaryDataSource(){
+    public DataSource SecondaryDataSource(){
         return DataSourceBuilder.create().build();
     }
 }
