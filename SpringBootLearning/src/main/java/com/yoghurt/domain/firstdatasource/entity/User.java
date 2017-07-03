@@ -1,21 +1,18 @@
 package com.yoghurt.domain.firstdatasource.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
 
 /**
  * Created by admin on 2017/6/22.
  */
-@Entity
+//@Entity
 public class User {
     private long id;
     private String name;
     private Integer age;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     public long getId() {
         return id;
     }

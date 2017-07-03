@@ -3,6 +3,8 @@ package com.yoghurt.controller;
 import com.yoghurt.Exception.MyException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import springfox.documentation.annotations.ApiIgnore;
 
 /**
@@ -20,5 +22,11 @@ public class HelpController {
     @RequestMapping(value = "/")
     public String index(){
         return "index";
+    }
+
+    @RequestMapping(value = "/show")
+    @ResponseBody
+    public String show(@RequestParam String name){
+        return "Hello," + name;
     }
 }
